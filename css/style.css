@@ -1,0 +1,93 @@
+@font-face {
+font-family: undefined-medium;
+src: url("../fonts/undefined-medium/undefined-medium.woff")
+
+}
+
+body {
+	font-family: undefined-medium;	
+	background: url("../images/stars.gif") repeat;
+	color: white;
+	image-rendering: optimizespeed;
+}
+
+h1 {
+	/*color: #bd93f9; */
+	text-shadow:
+        0 0 7px #bd93f9,
+        0 0 14px #bd93f9;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+		text-shadow:
+        0 0 7px #bd93f9,
+        0 0 14px #bd93f9;
+}
+
+.glowie-text {
+text-shadow:
+        0 0 7px #bd93f9,
+        0 0 14px #bd93f9;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.left-text {
+	text-align: left;
+}
+
+.contact-text {
+	font-size: 1;
+}
+
+
+
+.button {
+			background-color: #2222228c;
+			border: solid;
+			color: white;
+			padding: 40px 70px;
+			text-align: center;
+			display: inline-block;
+			font-size: 42px;
+			margin: 2px 2px;
+	
+			border-color: #bd93f9;
+		}
+		
+.button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.entry {
+			font-size: 17px;
+			background-color: #2222228c;
+			border: solid;
+			color: white;
+			width: 750px;
+			padding: 40px 70px;
+			text-align: center;
+			display: inline-block;
+			margin: 2px 2px;
+	
+			border-color: #bd93f9;
+}
+
+.setup-resize {
+	width: 600px;
+
+}
+
+
+lastfm-tracks {
+	text-align: left;
+	box-sizing: border-box;
+	border: 1px solid #000;
+	width: 270px;
+	height: 714px;
+}

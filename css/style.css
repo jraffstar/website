@@ -57,6 +57,8 @@ text-shadow:
 			margin: 2px 2px;
 	
 			border-color: #bd93f9;
+			box-shadow:  
+       			 0 0 7px #bd93f9;
 		}
 		
 .button:hover {

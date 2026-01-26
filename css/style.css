@@ -1,0 +1,118 @@
+@font-face {
+font-family: undefined-medium;
+src: url("../fonts/undefined-medium/undefined-medium.woff")
+
+}
+
+body {
+	font-family: undefined-medium;	
+	background: url("../images/stars.gif") repeat;
+	color: white;
+	image-rendering: optimizespeed;
+}
+
+h1 {
+	/*color: #bd93f9; */
+	text-shadow:
+        0 0 7px #bd93f9,
+        0 0 14px #bd93f9;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+		text-shadow:
+        0 0 7px #bd93f9,
+        0 0 14px #bd93f9;
+}
+
+p img{
+	vertical-align: middle;
+}
+
+.glowie-text {
+text-shadow:
+        0 0 7px #bd93f9,
+        0 0 14px #bd93f9;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.grid-lock {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+}
+
+.left-text {
+	text-align: left;
+}
+
+.contact-text {
+	font-size: 1;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 265px;
+    height: 215px;
+    margin: 10px;
+    background-color: #2222228c;
+
+	font-size: 24px;
+}
+
+.button-shadow {
+	box-shadow:  
+       	0 0 7px #bd93f9;
+}
+		
+.button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.footing:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.footing {
+			background-color: #2222228c;
+			border: none;
+			color: white;
+			padding: 40px 70px;
+			text-align: center;
+			display: inline-block;
+			font-size: 1px;
+			margin: 10px 2px;
+}
+
+.entry {
+			font-size: 17px;
+			background-color: #2222228c;
+			border: solid;
+			color: white;
+			width: 900px;
+			padding: 40px 20px;
+			text-align: center;
+			display: inline-block;
+			margin: 2px 2px;
+	
+			border-color: #bd93f9;
+}
+
+.setup-resize {
+	width: 600px;
+
+}
+
+.button-size {
+	width: 100px;
+	height: 100px;
+}

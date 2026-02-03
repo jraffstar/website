@@ -1,52 +1,6 @@
 @font-face {
-font-family: undefined-medium;
-src: url("../fonts/undefined-medium/undefined-medium.woff")
-
-}
-
-img {
-	width: 200px
-}
-
-/* Three-column image grid with numbered captions and alignment classes */
-.three-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 12px;
-	justify-items: center; /* centers items in their column by default */
-	align-items: start;
-	margin: 12px 0 24px 0;
-}
-
-.grid-item {
-	text-align: center;
-}
-
-.grid-item img {
-	width: 180px; /* slightly smaller than global img rule for balance */
-	height: auto;
-	display: block;
-	margin: 0 auto;
-	border: 1px solid rgba(255,255,255,0.08);
-}
-
-.grid-item figcaption {
-	margin-top: 6px;
-	font-size: 14px;
-	color: #ddd;
-}
-
-/* Alignment helpers: left, middle (center), right */
-.grid-item.left { justify-self: start; text-align: left; }
-.grid-item.middle { justify-self: center; text-align: center; }
-.grid-item.right { justify-self: end; text-align: right; }
-
-/* Responsive: stack to single column on narrow viewports */
-@media (max-width: 700px) {
-	.three-grid {
-		grid-template-columns: 1fr;
-	}
-	.grid-item.left, .grid-item.middle, .grid-item.right { justify-self: center; text-align: center; }
+	font-family: undefined-medium;
+	src: url("../fonts/undefined-medium/undefined-medium.woff")
 }
 
 body {
@@ -66,17 +20,17 @@ h1 {
 a {
 	text-decoration: none;
 	color: inherit;
-		text-shadow:
+	text-shadow:
         0 0 7px #bd93f9,
         0 0 14px #bd93f9;
 }
 
-p img{
+p img {
 	vertical-align: middle;
 }
 
 .glowie-text {
-text-shadow:
+	text-shadow:
         0 0 7px #bd93f9,
         0 0 14px #bd93f9;
 }
@@ -108,13 +62,11 @@ text-shadow:
     height: 215px;
     margin: 10px;
     background-color: #2222228c;
-
 	font-size: 24px;
 }
 
 .button-shadow {
-	box-shadow:  
-       	0 0 7px #bd93f9;
+	box-shadow: 0 0 7px #bd93f9;
 }
 		
 .button:hover {
@@ -128,36 +80,130 @@ text-shadow:
 }
 
 .footing {
-			background-color: #2222228c;
-			border: none;
-			color: white;
-			padding: 40px 70px;
-			text-align: center;
-			display: inline-block;
-			font-size: 1px;
-			margin: 10px 2px;
+	background-color: #2222228c;
+	border: none;
+	color: white;
+	padding: 40px 70px;
+	text-align: center;
+	display: inline-block;
+	font-size: 1px;
+	margin: 10px 2px;
 }
 
 .entry {
-			font-size: 17px;
-			background-color: #2222228c;
-			border: solid;
-			color: white;
-			width: 900px;
-			padding: 40px 20px;
-			text-align: center;
-			display: inline-block;
-			margin: 2px 2px;
-	
-			border-color: #bd93f9;
+	font-size: 17px;
+	background-color: #2222228c;
+	border: solid;
+	color: white;
+	width: 900px;
+	padding: 40px 20px;
+	text-align: center;
+	display: inline-block;
+	margin: 2px 2px;
+	border-color: #bd93f9;
 }
 
 .setup-resize {
 	width: 600px;
-
 }
 
 .button-size {
 	width: 100px;
 	height: 100px;
+}
+
+/* ===== Music page styles (does not affect homepage) ===== */
+
+.three-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 16px;
+	width: 100%;
+	max-width: 900px;
+	align-items: start;
+	margin: 12px auto 24px auto;
+}
+
+.grid-item {
+	text-align: center;
+}
+
+.grid-item img {
+	width: auto;
+	max-width: 200px;
+	height: auto;
+	display: block;
+	margin: 0;
+	border: 1px solid rgba(255,255,255,0.08);
+}
+
+.grid-item figcaption {
+	margin-top: 6px;
+	font-size: 14px;
+	color: #ddd;
+	text-align: center;
+	max-width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+.grid-item.left { justify-self: start; text-align: left; }
+.grid-item.middle { justify-self: center; text-align: center; }
+.grid-item.right { justify-self: end; text-align: right; }
+
+@media (max-width: 700px) {
+	.three-grid {
+		grid-template-columns: 1fr;
+	}
+	.grid-item.left, .grid-item.middle, .grid-item.right { justify-self: center; text-align: center; }
+}
+
+.other-inline {
+	display: inline-block;
+	text-align: center;
+	margin: 8px;
+	vertical-align: top;
+}
+
+.other-inline img {
+	width: auto;
+	max-width: 200px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.other-inline figcaption {
+	margin-top: 6px;
+	font-size: 13px;
+	color: #ddd;
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+.view-link {
+	text-align: center;
+	margin-top: 6px;
+}
+.view-link a {
+	color: #ffffff;
+	text-decoration: none;
+	text-shadow:
+		0 0 7px #bd93f9,
+		0 0 14px #bd93f9;
+	transition: text-shadow 140ms ease, color 140ms ease, transform 140ms ease;
+}
+.view-link a:hover {
+	text-decoration: underline;
+	text-shadow:
+		0 0 10px #bd93f9,
+		0 0 20px #bd93f9,
+		0 0 28px #bd93f9;
 }

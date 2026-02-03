@@ -11,7 +11,6 @@ body {
 }
 
 h1 {
-	/*color: #bd93f9; */
 	text-shadow:
         0 0 7px #bd93f9,
         0 0 14px #bd93f9;
@@ -112,8 +111,6 @@ p img {
 	height: 100px;
 }
 
-/* ===== Music page styles (does not affect homepage) ===== */
-
 .three-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -206,4 +203,103 @@ p img {
 		0 0 10px #bd93f9,
 		0 0 20px #bd93f9,
 		0 0 28px #bd93f9;
+}
+
+@media (max-width: 768px) {
+	.grid-lock {
+		grid-auto-flow: row;
+		justify-items: center;
+	}
+
+	.button {
+		width: 85%;
+		max-width: 280px;
+		height: auto;
+		padding: 20px 15px;
+		margin: 8px auto;
+	}
+
+	.button img {
+		max-width: 80px;
+		height: auto;
+	}
+
+	.entry {
+		width: 90%;
+		max-width: 100%;
+		padding: 20px 15px;
+		box-sizing: border-box;
+	}
+
+	.setup-resize {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.footing {
+		padding: 20px 30px;
+		display: block;
+		margin: 8px auto;
+		width: 70%;
+		max-width: 250px;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	h2 {
+		font-size: 1.2em;
+	}
+
+	p img {
+		max-width: 28px;
+		height: auto;
+	}
+
+	.three-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.grid-item,
+	.grid-item.left,
+	.grid-item.middle,
+	.grid-item.right {
+		justify-self: center;
+		text-align: center;
+	}
+
+	.grid-item img {
+		max-width: 180px;
+		margin: 0 auto;
+	}
+
+	.entry .left-text h2 {
+		text-align: center;
+	}
+
+	.other-inline {
+		display: block;
+		margin: 16px auto;
+		width: 90%;
+		max-width: 200px;
+	}
+
+	.other-inline img {
+		max-width: 180px;
+		margin: 0 auto;
+	}
+
+	body {
+		padding: 10px;
+		box-sizing: border-box;
+	}
+
+	.center-text > img,
+	.center-text > a > img {
+		max-width: 80px;
+		height: auto;
+		margin: 4px;
+	}
 }

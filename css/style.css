@@ -4,6 +4,51 @@ src: url("../fonts/undefined-medium/undefined-medium.woff")
 
 }
 
+img {
+	width: 200px
+}
+
+/* Three-column image grid with numbered captions and alignment classes */
+.three-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 12px;
+	justify-items: center; /* centers items in their column by default */
+	align-items: start;
+	margin: 12px 0 24px 0;
+}
+
+.grid-item {
+	text-align: center;
+}
+
+.grid-item img {
+	width: 180px; /* slightly smaller than global img rule for balance */
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	border: 1px solid rgba(255,255,255,0.08);
+}
+
+.grid-item figcaption {
+	margin-top: 6px;
+	font-size: 14px;
+	color: #ddd;
+}
+
+/* Alignment helpers: left, middle (center), right */
+.grid-item.left { justify-self: start; text-align: left; }
+.grid-item.middle { justify-self: center; text-align: center; }
+.grid-item.right { justify-self: end; text-align: right; }
+
+/* Responsive: stack to single column on narrow viewports */
+@media (max-width: 700px) {
+	.three-grid {
+		grid-template-columns: 1fr;
+	}
+	.grid-item.left, .grid-item.middle, .grid-item.right { justify-self: center; text-align: center; }
+}
+
 body {
 	font-family: undefined-medium;	
 	background: url("../images/stars.gif") repeat;

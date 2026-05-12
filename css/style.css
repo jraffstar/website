@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
 	font-family: undefined-medium;
 	src: url("../fonts/undefined-medium/undefined-medium.woff")
 }
@@ -79,10 +79,11 @@ p img {
 }
 
 .footing {
+	width: 280px;
 	background-color: #2222228c;
 	border: none;
 	color: white;
-	padding: 40px 70px;
+	padding: 40px 0px;
 	text-align: center;
 	display: inline-block;
 	font-size: 1px;
